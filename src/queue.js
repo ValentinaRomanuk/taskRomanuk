@@ -14,11 +14,20 @@ class PriorityQueue {
 	}
 
 	size() {
-
+		var length = 0;
+			this.traverse(function(node){
+				length++;
+			});
+			return length;
 	}
 
 	isEmpty() {
-		
+		if(this.root == null){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 }
 
