@@ -1,10 +1,20 @@
 class Node {
 	constructor(data, priority) {
-
+		this.root = null;
+		this.data = data;
+		this.priority = priority;
+		this.left = left || null;
+		this.right = right || null;
 	}
 
 	appendChild(node) {
-
+		if (this.left === null) {
+			this.left = node;
+			this.left.parent = this;
+		}else if (this.right === null){
+			this.right = node;
+			this.right.parent = this;
+}
 	}
 
 	removeChild(node) {
