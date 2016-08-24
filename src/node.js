@@ -1,10 +1,10 @@
 class Node {
 	constructor(data, priority) {
-		this.root = null;
 		this.data = data;
 		this.priority = priority;
-		this.left = left || null;
-		this.right = right || null;
+		this.parent = null;
+		this.left = null;
+		this.right = null;
 	}
 
 	appendChild(node) {
